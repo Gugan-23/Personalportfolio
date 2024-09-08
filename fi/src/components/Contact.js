@@ -11,7 +11,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:5000', formData)
+    axios.post('https://personalportfolio-api.vercel.app', formData)
       .then(response => {
         
         alert('Email sent successfully!'); // Display dialog box
