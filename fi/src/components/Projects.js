@@ -31,7 +31,7 @@ const Projects = () => {
                
                 <p>
                 <div className="image-container">
-      <img src={`${process.env.PUBLIC_URL}/papro.PNG`} alt="Profile" />
+      <img src={`${process.env.PUBLIC_URL}/Papro.PNG`} alt="Profile" />
     </div>&nbsp;&nbsp;&nbsp;&nbsp;This project involved analyzing a dataset from an online learning platform to uncover patterns and
 trends related to user engagement, course completion rates, and learning outcomes. Using SQL, data
 was extracted and queried from a relational database to identify key metrics. Python was utilized for
