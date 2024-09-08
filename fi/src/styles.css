@@ -1,0 +1,446 @@
+/* Header styling */
+header {
+  background: linear-gradient(45deg, #3a6186, #89253e);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family:sans-serif;
+  position: relative; /* Allows for absolutely positioned children */
+}
+@import url('https://fonts.googleapis.com/css2?family=Berlin+Sans+FB+Demi:wght@400;700&display=swap');
+
+/* Apply font family globally */
+body {
+  font-family: 'Berlin Sans FB Demi', sans-serif;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+header nav a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em; /* Default font size */
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #ffcc00;
+}
+
+/* Profile image styling */
+
+
+
+/* Section styling */
+section {
+  padding: 40px 20px;
+  margin: 30px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+/* Header text styles */
+h2, h3, h4 {
+  text-align: left;
+  margin-left: 20px; /* Align with other text */
+}
+
+h2,h3,h4 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 1200px) {
+  header nav a {
+    font-size: 1.1em; /* Slightly smaller font size */
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  header nav a {
+    font-size: 1em; /* Smaller font size */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header nav a {
+    font-size: 0.9em; /* Even smaller font size */
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header nav a {
+    font-size: 0.8em; /* Smallest font size */
+    margin: 0 8px; /* Adjust margin to fit smaller screens */
+  }
+}
+
+/* Shape styling for background effects */
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: move 20s infinite linear;
+}.container {
+  display: flex;
+  align-items: center; /* Vertically center-align items */
+  margin: 20px;
+  flex-wrap: wrap; /* Allows the items to wrap on smaller screens */
+}
+
+.image-container {
+  margin-right: 20px; /* Space between the image and text */
+  flex: 1; /* Allows the image container to grow and shrink as needed */
+  max-width: 100%; /* Prevents the image from exceeding the container’s width */
+}
+
+.image-container img {
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains the aspect ratio */
+  max-width: 1000px; /* Limits the maximum width of the image */
+  max-height: 450px; /* Limits the maximum height of the image */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  border: 2px solid #000; /* Adds a solid border to define the edges */
+  border-radius: 5px; /* Slightly rounded corners for a cleaner look */
+  transition: transform 0.3s ease-in-out;
+  image-rendering: crisp-edges; /* Ensures edges are sharp */
+}
+
+.image-container img:hover {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+.text-container {
+  flex: 2; /* Allows the text container to take up more space */
+  max-width: 100%; /* Prevents the text container from exceeding the width of the container */
+}
+
+
+@keyframes move {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-50px) translateX(50px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0) translateX(0) rotate(360deg);
+  }
+}
+.shape:nth-child(1) {
+  top: 50px;
+  left: 100px;
+  width: 150px;
+  height: 150px;
+  background: #ff5722; /* Orange */
+  animation-duration: 15s;
+  border-radius: 0; /* Make it square */
+}
+
+
+
+.shape:nth-child(3) {
+  bottom: 150px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  background: #009688; /* Teal */
+  animation-duration: 5s;
+  animation-delay: -3s;
+}
+.shape:nth-child(2) {
+  top: 200px;
+  right: 100px;
+  width: 200px;
+  height: 200px;
+  background: #3f51b5; /* Indigo */
+  animation-duration: 5s;
+  animation-delay: -5s;
+}
+.shape:nth-child(4) {
+  bottom: 100px;
+  right: 200px;
+  width: 120px;
+  height: 120px;
+  background: #ffc107; /* Amber */
+  animation-duration: 5s;
+  animation-delay: -8s;
+}
+
+.shape:nth-child(5) {
+  top: 400px;
+  left: 300px;
+  width: 180px;
+  height: 180px;
+  background: #9c27b0; /* Purple */
+  animation-duration: 5s;
+  animation-delay: -6s;
+}
+
+.shape:nth-child(6) {
+  top: 150px;
+  right: 100px;
+  width: 160px;
+  height: 160px;
+  background: #000000; /* Green */
+  animation-duration: 12s;
+  animation-delay: -4s;
+}
+
+.shape:nth-child(7) {
+  bottom: 200px;
+  left: 400px;
+  width: 140px;
+  height: 140px;
+  background: #e91e63; /* Pink */
+  animation-duration: 10s;
+  animation-delay: -7s;
+}
+
+.shape:nth-child(8) {
+  top: 300px;
+  right: 300px;
+  width: 130px;
+  height: 130px;
+  background: #00bcd4; /* Cyan */
+  animation-duration: 7s;
+  animation-delay: -9s;
+}
+
+.shape:nth-child(9) {
+  bottom: 300px;
+  right: 400px;
+  width: 110px;
+  height: 110px;
+  background: #f44336; /* Red */
+  animation-duration: 9s;
+  animation-delay: -10s;
+}
+
+.shape:nth-child(10) {
+  top: 50px;
+  right: 50px;
+  width: 170px;
+  height: 170px;
+  background: #795548; /* Brown */
+  animation-duration: 14s;
+  animation-delay: -2s;
+}
+
+
+/* Additional styling */
+h3, h4 {
+  margin: 10px 0;
+}
+
+/* Button styling */
+ul li {
+  display: block;
+  background-color: #3a6186;
+  color: #fff;
+  padding: 10px 15px; /* Default padding */
+  margin: 5px;
+  border-radius: 20px;
+  width: fit-content; /* Set the width to fit the content */
+  max-width: 150px; /* Specify a max-width */
+  transition: background-color 0.3s ease;
+  font-size: 1rem; /* Default font size */
+}
+
+/* Responsive font size and padding for buttons */
+@media only screen and (max-width: 1200px) {
+  ul li {
+    font-size: 0.9rem; /* Slightly smaller font size */
+    padding: 8px 12px; /* Adjust padding */
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  ul li {
+    font-size: 0.8rem; /* Smaller font size */
+    padding: 6px 10px; /* Adjust padding */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  ul li {
+    font-size: 0.7rem; /* Even smaller font size */
+    padding: 4px 8px; /* Adjust padding */
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  ul li {
+    font-size: 0.6rem; /* Smallest font size */
+    padding: 3px 6px; /* Adjust padding */
+  }
+}
+  form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+  }
+  
+  form input:focus, form textarea:focus {
+    border-color: #3a6186;
+  }
+  
+  form button {
+    padding: 15px 30px;
+    background-color: #3a6186;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #89253e;
+  }
+  .skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensures it wraps on smaller screens */
+}
+
+.skills-category {
+  flex: 1; /* Takes equal space for each category */
+  margin: 10px;
+  min-width: 250px; /* Ensures the categories don't get too small on smaller screens */
+}
+
+.skills-category h3 {
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.skills-category ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills-category li {
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+.project h3{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+section {
+  padding: 40px 20px;
+  margin: 30px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+  .dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .dashboard-item {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .dashboard-item h3 {
+    margin-bottom: 15px;
+  }
+  
+  .dashboard-item p {
+    color: #fff;
+  }
+  
+  .dashboard-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  }.project h3{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+ h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    position: relative;
+    text-align: left;
+    font-size: 4vw;
+    margin-left: 20px;
+  } h3 {
+  margin: 10px 0;
+  font-size: 1.5em; /* Adjust font size as needed */
+  color: #3a6186; /* Match the color scheme */
+  margin-left: 20px; /* Align with other text */
+}
+    h4 {
+    margin-bottom: 20px;
+   
+    position: relative;
+    text-align: left;
+    
+    margin-left: 20px;
+  } h2:after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #2e9b37;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-radius: 2px;
+  }
+  #linkedin-button, #hackerrank-button, #github-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3a6186; /* Button background color */
+  color: white; /* Button text color */
+  text-decoration: none; /* Removes underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  text-align: center; /* Centers the text */
+  margin: 10px 0; /* Space between buttons */
+}
+
+#linkedin-button:hover, #hackerrank-button:hover, #github-button:hover {
+  background-color: #d44bc9; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+.no-underline {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Optional: Keeps the link color consistent with surrounding text */
+}
+
+.no-underline:hover {
+  text-decoration: underline; /* Adds underline on hover if desired */
+}

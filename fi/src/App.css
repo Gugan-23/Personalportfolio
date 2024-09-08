@@ -1,0 +1,102 @@
+/* Reset some basic elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+/* Container for Page Content */
+.container {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+/* Paragraph Styles */
+p {
+  margin: 1rem 0;
+}/* General styles for the App */
+.App {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Shapes */
+.shape {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    animation: move 20s infinite alternate;
+    border-radius: 50%;
+}
+
+/* Positions for different shapes */
+.shape:nth-child(1) { top: 10%; left: 20%; }
+.shape:nth-child(2) { top: 30%; right: 20%; }
+.shape:nth-child(3) { top: 50%; left: 50%; }
+.shape:nth-child(4) { bottom: 20%; right: 30%; }
+.shape:nth-child(5) { bottom: 10%; left: 40%; }
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+    .shape {
+        width: 50px;
+        height: 50px;
+    }
+
+    .App {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
