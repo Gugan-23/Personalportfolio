@@ -182,7 +182,7 @@ h2,h3,h4 {
 
 .shape:nth-child(5) {
   top: 400px;
-  left: 300px;
+  left: 200px;
   width: 180px;
   height: 180px;
   background: #9c27b0; /* Purple */
@@ -191,7 +191,7 @@ h2,h3,h4 {
 }
 
 .shape:nth-child(6) {
-  top: 150px;
+  top: 50px;
   right: 100px;
   width: 160px;
   height: 160px;
@@ -201,8 +201,8 @@ h2,h3,h4 {
 }
 
 .shape:nth-child(7) {
-  bottom: 200px;
-  left: 400px;
+  bottom: 150px;
+  left: 200px;
   width: 140px;
   height: 140px;
   background: #e91e63; /* Pink */
@@ -211,7 +211,7 @@ h2,h3,h4 {
 }
 
 .shape:nth-child(8) {
-  top: 300px;
+  top: 150px;
   right: 300px;
   width: 130px;
   height: 130px;
@@ -221,8 +221,8 @@ h2,h3,h4 {
 }
 
 .shape:nth-child(9) {
-  bottom: 300px;
-  right: 400px;
+  bottom: 200px;
+  right: 200px;
   width: 110px;
   height: 110px;
   background: #f44336; /* Red */
